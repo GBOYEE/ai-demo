@@ -1,0 +1,40 @@
+# AI Workflow Automation Demo
+
+## Quick Start
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Configure your OpenRouter API key:
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your OPENROUTER_API_KEY
+   ```
+
+3. Run the app:
+   ```bash
+   streamlit run app.py
+   ```
+
+4. Open http://localhost:8501 in your browser.
+
+## What It Does
+
+1. You enter a URL
+2. The app scrapes the web page content
+3. AI (OpenRouter) summarizes the content
+4. A PDF report is generated with both the full content and the summary
+5. You can download the PDF
+
+## Deploy to Streamlit Cloud
+
+1. Push this repo to GitHub
+2. Go to https://share.streamlit.io
+3. Deploy from your repo
+4. Add `OPENROUTER_API_KEY` in the Secrets settings
+
+## License
+
+MIT
